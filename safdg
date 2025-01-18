@@ -398,7 +398,7 @@ local Category = {}; Category.__index = Category; do
 	end
 end
 
-function Bleachhack:Create()
+function Oceanus:Create()
 	local self = setmetatable({}, Bleachhack)
 	self.UI = objects.Bleachhack:Clone()
 	self.UI.Parent = IS_STUDIO and player.PlayerGui or ((gethui and gethui()) or game:GetService("CoreGui"))
