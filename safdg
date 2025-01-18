@@ -7,7 +7,7 @@ local httpService = game:GetService("HttpService")
 
 local player = players.LocalPlayer
 
-local Oceanus = {}; Bleachhack.__index = Bleachhack
+local Oceanus = {}; Oceanus.__index = Oceanus
 local objects = (runService:IsStudio() and game:GetService("ReplicatedStorage"):FindFirstChild("Oceanus") or game:GetObjects("rbxassetid://17799632030")[1]):Clone()
 
 local IS_STUDIO = runService:IsStudio()
