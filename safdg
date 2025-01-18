@@ -8,7 +8,7 @@ local httpService = game:GetService("HttpService")
 local player = players.LocalPlayer
 
 local Bleachhack = {}; Bleachhack.__index = Bleachhack
-local objects = (runService:IsStudio() and game:GetService("ReplicatedStorage"):FindFirstChild("Bleachhack") or game:GetObjects("rbxassetid://17799632030")[1]):Clone()
+local objects = (runService:IsStudio() and game:GetService("ReplicatedStorage"):FindFirstChild("Oceanus") or game:GetObjects("rbxassetid://17799632030")[1]):Clone()
 
 local IS_STUDIO = runService:IsStudio()
 local indent = " "
