@@ -470,7 +470,7 @@ function Oceanus:Export()
 	return httpService:JSONEncode(data)
 end
 
-function Bleachhack:Import(data)
+function Oceanus:Import(data)
 	data = httpService:JSONDecode(data)
 	
 	for categoryName, data in pairs(data) do
@@ -486,4 +486,4 @@ function Bleachhack:Import(data)
 	end
 end
 
-return Bleachhack
+return Oceanus
