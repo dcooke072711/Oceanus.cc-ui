@@ -399,8 +399,8 @@ local Category = {}; Category.__index = Category; do
 end
 
 function Oceanus:Create()
-	local self = setmetatable({}, Bleachhack)
-	self.UI = objects.Bleachhack:Clone()
+	local self = setmetatable({}, Oceanus)
+	self.UI = objects.Oceanus:Clone()
 	self.UI.Parent = IS_STUDIO and player.PlayerGui or ((gethui and gethui()) or game:GetService("CoreGui"))
 	self.Categories = {}
 	
@@ -436,13 +436,13 @@ function Oceanus:Create()
 	return self
 end
 
-function Bleachhack:CreateCategory(title, icon)
+function Oceanus:CreateCategory(title, icon)
 	local category = Category.new(title, icon, self)
 	self.Categories[title] = category
 	return category
 end
 
-function Bleachhack:Export()
+function Oceanus:Export()
 	local data = {}
 	
 	for index, category in pairs(self.Categories) do
